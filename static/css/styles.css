@@ -1,0 +1,19 @@
+body > .container-fluid {
+    padding: 10px 0 0 0;
+}
+
+html, body, #container {
+    height: 100%;
+    width: 100%;  
+}
+
+#map {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+span {
+    color: #B70E21;
+    font-size: 1.1rem;
+}
