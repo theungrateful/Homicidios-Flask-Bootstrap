@@ -1,9 +1,12 @@
 {% extends "homicidios/layout.html" %}
 
 {% block content %}
-
-<div id="map"></div>
+{% if response %}
+<div id="map" data-geocode='{{ response|tojson }}'></div>
 <script src="{{url_for('static', filename='js/map.js')}}"></script>
+{% else %}
+<p>Error</p>
+{% endif %}
 {% endblock%}
 
     

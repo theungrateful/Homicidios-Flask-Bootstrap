@@ -7,11 +7,8 @@
         
         // GeoJSON from API Rest
       
-       let miSelect=2020; 
-        
-     
-      
-
+        /**let miSelect=2020; 
+       
         async function fetchHomicidiosJSON() {
         const response = await fetch('https://python-api-homicidios.herokuapp.com/');
         const homicidios = await response.json();
@@ -27,4 +24,7 @@
 							    }
                     });
         layer1.addTo(map);
-            });
+            });**/
+            var geocode = JSON.parse(document.getElementById("map").dataset.geocode);
+            let layer1 = L.geoJson(geocode);
+            layer1.addTo(map);
