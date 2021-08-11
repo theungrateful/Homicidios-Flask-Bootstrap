@@ -5,7 +5,7 @@ from flask import render_template , request , redirect, Response , jsonify
 
 app = Flask(__name__)
 
-#Get GeoJson Api----
+#Get GeoJson Api----*
 url = 'https://python-api-homicidios.herokuapp.com/'
 response = requests.get(url).json()
 
